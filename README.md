@@ -22,6 +22,12 @@ REACT_APP_API_BASE_URL=http://localhost:8080
 
 In case your backend is running on a different server or port it can be updated over here.
 
+## Live Demo
+
+For a live demo, you can access it on the below url. Please note in case you are behind a firewall, it may not render. The application is connected to a backend API hosted on the same server.
+
+http://193.123.75.224/
+
 ## Notes:
 
 - The centralized store is currenly managing only notifications. The store can be updated to include more actions/reducers as the application grows.
