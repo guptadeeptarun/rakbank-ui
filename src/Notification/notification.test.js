@@ -61,7 +61,7 @@ test('should toast with success message', () => {
     expect(toast.success).toHaveBeenCalledWith('Signup successful');
 });
 
-test('should toast with error when http error message', () => {
+test('should toast with API error response when HTTP 400', () => {
 
     const initialState = {
         notification: {
@@ -82,4 +82,24 @@ test('should toast with error when http error message', () => {
     expect(toast.error).toHaveBeenCalledWith('This email is already associated with another user');
 });
 
+test('should toast Unauthorized message when HTTP 401', () => {
+
+    const initialState = {
+        notification: {
+            type: 'httpError',
+            payload: [401]
+        },
+    };
+
+    const store = createStore(NotificationReducer, initialState);
+
+    render(
+        <Provider store={store}>
+            <Notification />
+        </Provider>
+    );
+
+
+    expect(toast.error).toHaveBeenCalledWith(expect.stringContaining("Unauthorized"))
+});
 

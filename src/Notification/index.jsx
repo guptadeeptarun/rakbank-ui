@@ -22,7 +22,6 @@ export default function Notification() {
         if (notification?.type === 'httpError') {
             const [responseCode, responseBody] = notification.payload;
             if (responseCode === 400) {
-                console.log('inside notification reducer');
                 toast.error(responseBody?.errorMessage);
             } else if (responseCode === 401 || responseCode === 403) {
                 toast.error("Unauthorized Request");
