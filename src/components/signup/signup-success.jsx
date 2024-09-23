@@ -8,7 +8,7 @@ export default function SignupSuccess() {
                 <div className="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
 
                     <div>
-                        <Image src="img/rakbank-logo.webp" fluid />
+                        <Image src="img/rakbank-logo.webp" alt="rakbank-simply-app" fluid />
                     </div>
 
                     <div>
@@ -16,7 +16,7 @@ export default function SignupSuccess() {
                     </div>
 
                     <div style={{ padding: 30 }} className="form-group">
-                        <Image src="img/success.png" fluid />
+                        <Image src="img/success.png" alt="signup-successful" fluid />
                     </div>
 
                     <div>

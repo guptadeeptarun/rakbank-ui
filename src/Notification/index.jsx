@@ -12,15 +12,14 @@ export default function Notification() {
     const notification = useSelector((state) => state.notification);
 
     useEffect(() => {
-
-        if (notification.type === 'error') {
+        if (notification?.type === 'error') {
             toast.error(notification.payload);
         }
-        if (notification.type === 'success') {
+        if (notification?.type === 'success') {
             toast.success(notification.payload);
         }
 
-        if (notification.type === 'httpError') {
+        if (notification?.type === 'httpError') {
             const [responseCode, responseBody] = notification.payload;
             if (responseCode === 400) {
                 console.log('inside notification reducer');

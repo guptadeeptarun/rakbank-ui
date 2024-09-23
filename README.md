@@ -4,6 +4,11 @@ The first step is to build the application. Run the below command. Please make s
 
 - npm install
 
+## Run Tests
+
+Test cases can be executed by running the below command.
+
+- npm test
 
 ## Start the project
 

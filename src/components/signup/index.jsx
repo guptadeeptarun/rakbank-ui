@@ -37,7 +37,7 @@ export default function Signup() {
                 <div className="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
 
                     <div className="form-group">
-                        <Image src="img/rakbank-logo.webp" fluid />
+                        <Image src="img/rakbank-logo.webp" alt="rakbank-simply-app" fluid />
                     </div>
 
                     <h3>Create Account</h3>
